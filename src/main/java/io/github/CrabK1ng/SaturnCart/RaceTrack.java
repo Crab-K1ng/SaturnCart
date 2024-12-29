@@ -29,10 +29,11 @@ public class RaceTrack implements Json.Serializable {
     private static final Json JSON = new Json();
     private String trackName;
     public  boolean start = false;
+    public static int laps = 1;
+
     private List<Vector3> finishLinePositions;
     private List<Vector3> checkpoinOnePositions;
     private List<Vector3> checkpoinTwoPositions;
-    public static int laps = 1;
     private List<Player> players = new ArrayList<>();
     private List<Player> finished = new ArrayList<>();
 

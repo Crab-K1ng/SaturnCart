@@ -1,0 +1,60 @@
+{
+"zoneId": "base:flat",
+"isProne": false,
+"lastPlayerSpeed": 5,
+"entity": {
+	"uniqueId": {
+		"time": 1735511751982,
+		"rand": -891765915
+	},
+	"isOnGround": true,
+	"viewDirection": {
+		"x": -0.041286096,
+		"y": -0.52215683,
+		"z": -0.85184956
+	},
+	"position": {
+		"x": 0.39983284,
+		"y": 33,
+		"z": -0.33146235
+	},
+	"lastPosition": {
+		"x": 0.39983284,
+		"y": 33,
+		"z": -0.33146235
+	},
+	"viewPositionOffset": {
+		"y": 1.8
+	},
+	"localBoundingBox": {
+		"min": {
+			"x": -0.25,
+			"z": -0.25
+		},
+		"max": {
+			"x": 0.25,
+			"y": 1.9,
+			"z": 0.25
+		},
+		"cnt": {
+			"y": 0.95
+		},
+		"dim": {
+			"x": 0.5,
+			"y": 1.9,
+			"z": 0.5
+		}
+	},
+	"age": 700.25256,
+	"lastViewDirection": {
+		"x": -0.041286096,
+		"y": -0.52215683,
+		"z": -0.85184956
+	}
+},
+"inventory": {
+	"slots": "AAAAAQAAAB1iYXNlOmFsdW1pbml1bV9wYW5lbFtkZWZhdWx0XRMAAAAFc2xvdHMDAAAADW51bWJlck9mU2xvdHMAAAAABBIAAAASZGF0YV9tYW5pZmVzdF9rZXlzAAkAAAACaWQDAAAABmFtb3VudAMAAAAKc3RhY2tMaW1pdAcAAAAJaXNNb2RJdGVtCgAAAA9kYXRhVGFnTWFuaWZlc3QAAwAAAAZzbG90SWQKAAAACWl0ZW1TdGFjawADAAAABnNsb3RJZAAAAAAoAAAAAgAAAAAAAAABAAAAAAAAAD0AAAPoAAAAAAAAAAAAAAAAAwAAAAEAAAADAAAAAgAAAAMAAAADAAAAAwAAAAQAAAADAAAABQAAAAMAAAAGAAAAAwAAAAcAAAADAAAACAAAAAMAAAAJAAAAAwAAAAoAAAADAAAACwAAAAMAAAAMAAAAAwAAAA0AAAADAAAADgAAAAMAAAAPAAAAAwAAABAAAAADAAAAEQAAAAMAAAASAAAAAwAAABMAAAADAAAAFAAAAAMAAAAVAAAAAwAAABYAAAADAAAAFwAAAAMAAAAYAAAAAwAAABkAAAADAAAAGgAAAAMAAAAbAAAAAwAAABwAAAADAAAAHQAAAAMAAAAeAAAAAwAAAB8AAAADAAAAIAAAAAMAAAAhAAAAAwAAACIAAAADAAAAIwAAAAMAAAAkAAAAAwAAACUAAAADAAAAJgAAAAMAAAAnAAAAKA==",
+	"numberOfSlots": 40
+},
+"gamemode": "creative"
+}

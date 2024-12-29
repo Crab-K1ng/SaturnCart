@@ -1,0 +1,12 @@
+{
+"zoneId": "base:flat",
+"worldGenSaveKey": "base:flat",
+"seed": -309305243749698044,
+"spawnPoint": {
+	"x": 1788,
+	"y": 31,
+	"z": 1846
+},
+"respawnHeight": -16,
+"skyId": "base:blue_sky"
+}

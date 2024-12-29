@@ -1,0 +1,19 @@
+/start starts the race 
+/stop stops the race and prints 1st 
+
+/setfinishline [1 or 2] to set the finishline 1 for pos1 and 2 for pos2 can't be a straight line 
+/setcheckpoinone [1 or 2] to set checkpoinone 1 for pos1 and 2 for pos2 can't be a straight line 
+/setcheckpointwo [1 or 2] to set checkpointwo1 for pos1 and 2 for pos2 can't be a straight line 
+
+DO NOT USE 	
+/setall [1 or 2] to set all of them 1 for pos1 and 2 for pos2
+
+tests stuff
+/testf 
+/testa
+/testd
+/tests
+
+/new [name] make a new track
+/saveall save all the tracks
+/selecttrack [name] select a track 

@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "io.github.CrabK1ng.SaturnCart.mixins",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+  ],
+  "server": [
+    "ChunkLoaderMixin",
+    "PlayerMixin",
+    "PlayerPositionPacketMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

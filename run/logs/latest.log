@@ -1,0 +1,531 @@
+[22:35:39] [main/INFO] (LaunchWrapper) SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/C:/Users/Tristan/.gradle/caches/modules-2/files-2.1/com.github.PuzzleLoader/PuzzleLoader/2.2.2/2a5616c3eed4c65ff69216f0707a1c02d9fdc856/PuzzleLoader-2.2.2-client.jar Service=LaunchWrapper Env=SERVER
+[22:35:39] [main/INFO] (Puzzle | ModLocator) Discovered SaturnCartMod "DevMod" with ID "saturn_cart"
+[22:35:39] [main/WARN] (Puzzle | ModLocator) Warning! Only partial semantic versioning support
+[22:35:39] [main/INFO] (Puzzle | ModLocator) Mod deps for puzzle-loader
+[22:35:39] [main/INFO] (Puzzle | ModLocator) 	cosmic-reach: (0.3.14,true)
+[22:35:39] [main/INFO] (Puzzle | ModLocator) Mod deps for saturn_cart
+[22:35:39] [main/INFO] (Puzzle | ModLocator) 	puzzle-loader: (>=2.0.13,true)
+[22:35:39] [main/INFO] (Puzzle | ModLocator) 	cosmic-reach: (>=0.3.11,true)
+[22:35:40] [main/INFO] (LaunchWrapper) Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
+[22:35:40] [main/INFO] (Puzzle | Loader) Launching Cosmic Reach version 0.3.14
+[22:35:40] [main/INFO] (saturn_cart) Hello From PRE-INIT
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"block_events/block_events_c4.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"block_events/block_events_light_on.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"block_events/examples/block_events_set_sphere_example.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"block_events/block_events_growth.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"block_events/block_events_light_off.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"block_events/block_events_leaf_poplar.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"block_events/block_events_coconut.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"block_events/block_events_leaf_decay_poplar.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"block_events/examples/block_events_set_spherical_segment_example.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"block_events/block_events_sapling_poplar.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"block_events/block_events_coconut_decay.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"block_events/block_events_ice.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"block_events/block_events_glass.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"block_events/examples/block_events_set_cuboid_example.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"block_events/block_events_leaf_decay.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"block_events/block_events_air.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"block_events/block_events_default.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"block_events/block_events_wood.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"block_events/block_events_boombox.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"block_events/block_events_air.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"block_events/block_events_boombox.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"block_events/block_events_c4.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"block_events/block_events_coconut.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"block_events/block_events_coconut_decay.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"block_events/block_events_default.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"block_events/block_events_glass.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"block_events/block_events_growth.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"block_events/block_events_ice.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"block_events/block_events_leaf_decay.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"block_events/block_events_leaf_decay_poplar.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"block_events/block_events_leaf_poplar.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"block_events/block_events_light_off.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"block_events/block_events_light_on.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"block_events/block_events_sapling_poplar.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"block_events/block_events_wood.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"block_events/examples/block_events_set_cuboid_example.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"block_events/examples/block_events_set_sphere_example.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"block_events/examples/block_events_set_spherical_segment_example.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"blocks/air.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (BlockLoader) Registered event with ID [34m"base:air_puzzle_default_events"
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/empty.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"blocks/aluminium_panel.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (BlockLoader) Registered event with ID [34m"base:aluminium_panel_puzzle_default_events"
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_aluminium_panel.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/cube.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"block_state_generators/rotated.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"block_state_generators/all_stairs_seamless.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"block_state_generators/all_slabs.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"block_state_generators/all_stairs_seamed.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:aluminium_panel[default]"[0m with generator [34m"base:slabs_all"
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/slab_bottom.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/slab_top.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/slab_vertical.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_aluminium_panel.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/cube.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/slab_vertical.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_aluminium_panel.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/cube.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/slab_vertical.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_aluminium_panel.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/cube.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/slab_vertical.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:aluminium_panel[default]"[0m with generator [34m"base:stairs_seamed_all"
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/stairs_seamed_bottom.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/stairs_seamed_bottom.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/stairs_seamed_bottom.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/stairs_seamed_bottom.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"blocks/asphalt.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (BlockLoader) Registered event with ID [34m"base:asphalt_puzzle_default_events"
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_asphalt.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:asphalt[default]"[0m with generator [34m"base:slabs_all"
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_asphalt.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_asphalt.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_asphalt.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:asphalt[default]"[0m with generator [34m"base:stairs_seamless_all"
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/stairs_seamless_bottom.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/stairs_seamless_bottom.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/stairs_seamless_bottom.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/stairs_seamless_bottom.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"blocks/boombox.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (BlockLoader) Registered event with ID [34m"base:boombox_puzzle_default_events"
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_boombox.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"blocks/bricks.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (BlockLoader) Registered event with ID [34m"base:bricks_puzzle_default_events"
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_bricks.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:bricks[default]"[0m with generator [34m"base:slabs_all"
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_bricks.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_bricks.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_bricks.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:bricks[default]"[0m with generator [34m"base:stairs_seamless_all"
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"blocks/c4.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (BlockLoader) Registered event with ID [34m"base:c4_puzzle_default_events"
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_c4.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"blocks/cheese.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (BlockLoader) Registered event with ID [34m"base:cheese_puzzle_default_events"
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_cheese.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:cheese[default]"[0m with generator [34m"base:slabs_all"
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_cheese.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_cheese.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_cheese.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:cheese[default]"[0m with generator [34m"base:stairs_seamless_all"
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"blocks/coconut.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (BlockLoader) Registered event with ID [34m"base:coconut_puzzle_default_events"
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_coconut.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"blocks/crate_wooden.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (BlockLoader) Registered event with ID [34m"base:crate_wooden_puzzle_default_events"
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_crate_wooden.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"blocks/debug.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (BlockLoader) Registered event with ID [34m"base:debug_puzzle_default_events"
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_debug.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:debug[default]"[0m with generator [34m"base:slabs_all"
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_debug.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_debug.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_debug.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:debug[default]"[0m with generator [34m"base:stairs_seamless_all"
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"blocks/dirt.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (BlockLoader) Registered event with ID [34m"base:dirt_puzzle_default_events"
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_dirt.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:dirt[default]"[0m with generator [34m"base:slabs_all"
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_dirt.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_dirt.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_dirt.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:dirt[default]"[0m with generator [34m"base:stairs_seamless_all"
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"blocks/furnace.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (BlockLoader) Registered event with ID [34m"base:furnace_puzzle_default_events"
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_furnace_unlit.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_furnace_lit.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"blocks/glass.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (BlockLoader) Registered event with ID [34m"base:glass_puzzle_default_events"
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_glass.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:glass[default]"[0m with generator [34m"base:slabs_all"
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_glass.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_glass.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_glass.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:glass[default]"[0m with generator [34m"base:stairs_seamed_all"
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"blocks/grass.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (BlockLoader) Registered event with ID [34m"base:grass_puzzle_default_events"
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_grass.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_grass_full.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:grass[type=full]"[0m with generator [34m"base:slabs_all"
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_grass_full.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_grass_full.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_grass_full.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:grass[type=full]"[0m with generator [34m"base:stairs_seamless_all"
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"blocks/hazard.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (BlockLoader) Registered event with ID [34m"base:hazard_puzzle_default_events"
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_hazard.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:hazard[default]"[0m with generator [34m"base:slabs_all"
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_hazard.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_hazard.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_hazard.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:hazard[default]"[0m with generator [34m"base:stairs_seamless_all"
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"blocks/ice.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (BlockLoader) Registered event with ID [34m"base:ice_puzzle_default_events"
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_ice.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:ice[default]"[0m with generator [34m"base:slabs_all"
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_ice.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_ice.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_ice.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:ice[default]"[0m with generator [34m"base:stairs_seamless_all"
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"blocks/leaves.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (BlockLoader) Registered event with ID [34m"base:leaves_puzzle_default_events"
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_leaves.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:leaves[type=permament]"[0m with generator [34m"base:slabs_all"
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_leaves.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_leaves.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_leaves.json"[37m from Cosmic Reach
+[22:35:40] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:leaves[dist=1,type=decaying]"[0m with generator [34m"base:slabs_all"
+[22:35:40] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:leaves[dist=2,type=decaying]"[0m with generator [34m"base:slabs_all"
+[22:35:41] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:leaves[dist=3,type=decaying]"[0m with generator [34m"base:slabs_all"
+[22:35:41] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:leaves[dist=4,type=decaying]"[0m with generator [34m"base:slabs_all"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"blocks/leaves_poplar.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Registered event with ID [34m"base:leaves_poplar_puzzle_default_events"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_leaves_poplar.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:leaves_poplar[type=permanent]"[0m with generator [34m"base:slabs_all"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_leaves_poplar.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_leaves_poplar.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_leaves_poplar.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:leaves_poplar[dist=1,type=decaying]"[0m with generator [34m"base:slabs_all"
+[22:35:41] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:leaves_poplar[dist=2,type=decaying]"[0m with generator [34m"base:slabs_all"
+[22:35:41] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:leaves_poplar[dist=3,type=decaying]"[0m with generator [34m"base:slabs_all"
+[22:35:41] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:leaves_poplar[dist=4,type=decaying]"[0m with generator [34m"base:slabs_all"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"blocks/light.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Registered event with ID [34m"base:light_puzzle_default_events"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_light_off.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_light_base.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/cube_no_ao.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:light[power=off,lightRed=15,lightGreen=15,lightBlue=15]"[0m with generator [34m"base:slabs_all"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_light_off.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_light_base.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/cube_no_ao.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_light_off.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_light_base.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/cube_no_ao.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_light_off.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_light_base.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/cube_no_ao.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_light_white.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:light[power=on,lightRed=15,lightGreen=15,lightBlue=15]"[0m with generator [34m"base:slabs_all"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_light_white.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_light_white.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_light_white.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:light[power=off,lightRed=15,lightGreen=0,lightBlue=0]"[0m with generator [34m"base:slabs_all"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_light_red.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:light[power=on,lightRed=15,lightGreen=0,lightBlue=0]"[0m with generator [34m"base:slabs_all"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_light_red.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_light_red.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_light_red.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:light[power=off,lightRed=13,lightGreen=7,lightBlue=0]"[0m with generator [34m"base:slabs_all"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_light_orange.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:light[power=on,lightRed=13,lightGreen=7,lightBlue=0]"[0m with generator [34m"base:slabs_all"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_light_orange.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_light_orange.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_light_orange.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:light[power=off,lightRed=13,lightGreen=13,lightBlue=0]"[0m with generator [34m"base:slabs_all"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_light_yellow.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:light[power=on,lightRed=13,lightGreen=13,lightBlue=0]"[0m with generator [34m"base:slabs_all"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_light_yellow.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_light_yellow.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_light_yellow.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:light[power=off,lightRed=7,lightGreen=13,lightBlue=0]"[0m with generator [34m"base:slabs_all"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_light_lime.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:light[power=on,lightRed=7,lightGreen=13,lightBlue=0]"[0m with generator [34m"base:slabs_all"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_light_lime.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_light_lime.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_light_lime.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:light[power=off,lightRed=0,lightGreen=15,lightBlue=0]"[0m with generator [34m"base:slabs_all"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_light_green.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:light[power=on,lightRed=0,lightGreen=15,lightBlue=0]"[0m with generator [34m"base:slabs_all"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_light_green.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_light_green.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_light_green.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:light[power=off,lightRed=0,lightGreen=13,lightBlue=7]"[0m with generator [34m"base:slabs_all"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_light_spring_green.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:light[power=on,lightRed=0,lightGreen=13,lightBlue=7]"[0m with generator [34m"base:slabs_all"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_light_spring_green.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_light_spring_green.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_light_spring_green.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:light[power=off,lightRed=0,lightGreen=13,lightBlue=13]"[0m with generator [34m"base:slabs_all"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_light_cyan.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:light[power=on,lightRed=0,lightGreen=13,lightBlue=13]"[0m with generator [34m"base:slabs_all"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_light_cyan.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_light_cyan.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_light_cyan.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:light[power=off,lightRed=0,lightGreen=7,lightBlue=13]"[0m with generator [34m"base:slabs_all"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_light_azure.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:light[power=on,lightRed=0,lightGreen=7,lightBlue=13]"[0m with generator [34m"base:slabs_all"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_light_azure.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_light_azure.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_light_azure.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:light[power=off,lightRed=0,lightGreen=0,lightBlue=15]"[0m with generator [34m"base:slabs_all"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_light_blue.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:light[power=on,lightRed=0,lightGreen=0,lightBlue=15]"[0m with generator [34m"base:slabs_all"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_light_blue.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_light_blue.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_light_blue.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:light[power=off,lightRed=7,lightGreen=0,lightBlue=13]"[0m with generator [34m"base:slabs_all"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_light_violet.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:light[power=on,lightRed=7,lightGreen=0,lightBlue=13]"[0m with generator [34m"base:slabs_all"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_light_violet.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_light_violet.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_light_violet.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:light[power=off,lightRed=13,lightGreen=0,lightBlue=13]"[0m with generator [34m"base:slabs_all"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_light_magenta.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:light[power=on,lightRed=13,lightGreen=0,lightBlue=13]"[0m with generator [34m"base:slabs_all"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_light_magenta.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_light_magenta.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_light_magenta.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:light[power=off,lightRed=13,lightGreen=0,lightBlue=7]"[0m with generator [34m"base:slabs_all"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_light_rose.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:light[power=on,lightRed=13,lightGreen=0,lightBlue=7]"[0m with generator [34m"base:slabs_all"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_light_rose.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_light_rose.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_light_rose.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"blocks/lunar_soil.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Registered event with ID [34m"base:lunar_soil_puzzle_default_events"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_lunar_soil.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:lunar_soil[default]"[0m with generator [34m"base:slabs_all"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_lunar_soil.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_lunar_soil.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_lunar_soil.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:lunar_soil[default]"[0m with generator [34m"base:stairs_seamless_all"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"blocks/lunar_soil_packed.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Registered event with ID [34m"base:lunar_soil_packed_puzzle_default_events"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_lunar_soil_packed.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:lunar_soil_packed[default]"[0m with generator [34m"base:slabs_all"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_lunar_soil_packed.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_lunar_soil_packed.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_lunar_soil_packed.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:lunar_soil_packed[default]"[0m with generator [34m"base:stairs_seamed_all"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"blocks/magma.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Registered event with ID [34m"base:magma_puzzle_default_events"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_magma.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:magma[default]"[0m with generator [34m"base:slabs_all"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_magma.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_magma.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_magma.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:magma[default]"[0m with generator [34m"base:stairs_seamless_all"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"blocks/metal_panel.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Registered event with ID [34m"base:metal_panel_puzzle_default_events"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_metal_panel.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:metal_panel[default]"[0m with generator [34m"base:slabs_all"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_metal_panel.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_metal_panel.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_metal_panel.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:metal_panel[default]"[0m with generator [34m"base:stairs_seamed_all"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"blocks/ore_bauxite.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Registered event with ID [34m"base:ore_bauxite_puzzle_default_events"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_ore_bauxite.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"blocks/ore_gold.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Registered event with ID [34m"base:ore_gold_puzzle_default_events"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_ore_gold.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"blocks/ore_iron.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Registered event with ID [34m"base:ore_iron_puzzle_default_events"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_ore_iron.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"blocks/sand.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Registered event with ID [34m"base:sand_puzzle_default_events"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_sand.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:sand[default]"[0m with generator [34m"base:slabs_all"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_sand.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_sand.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_sand.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:sand[default]"[0m with generator [34m"base:stairs_seamless_all"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"blocks/sapling_poplar.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Registered event with ID [34m"base:sapling_poplar_puzzle_default_events"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_sapling_poplar.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"blocks/snow.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Registered event with ID [34m"base:snow_puzzle_default_events"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_snow.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:snow[default]"[0m with generator [34m"base:slabs_all"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_snow.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_snow.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_snow.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:snow[default]"[0m with generator [34m"base:stairs_seamless_all"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"blocks/stone_basalt.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Registered event with ID [34m"base:stone_basalt_puzzle_default_events"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_stone_basalt.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:stone_basalt[default]"[0m with generator [34m"base:slabs_all"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_stone_basalt.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_stone_basalt.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_stone_basalt.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:stone_basalt[default]"[0m with generator [34m"base:stairs_seamless_all"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"blocks/stone_gabbro.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Registered event with ID [34m"base:stone_gabbro_puzzle_default_events"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_stone_gabbro.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:stone_gabbro[default]"[0m with generator [34m"base:slabs_all"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_stone_gabbro.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_stone_gabbro.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_stone_gabbro.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:stone_gabbro[default]"[0m with generator [34m"base:stairs_seamless_all"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"blocks/stone_gravel.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Registered event with ID [34m"base:stone_gravel_puzzle_default_events"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_stone_gravel.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:stone_gravel[default]"[0m with generator [34m"base:slabs_all"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_stone_gravel.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_stone_gravel.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_stone_gravel.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:stone_gravel[default]"[0m with generator [34m"base:stairs_seamless_all"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"blocks/stone_limestone.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Registered event with ID [34m"base:stone_limestone_puzzle_default_events"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_stone_limestone.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:stone_limestone[default]"[0m with generator [34m"base:slabs_all"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_stone_limestone.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_stone_limestone.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_stone_limestone.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:stone_limestone[default]"[0m with generator [34m"base:stairs_seamless_all"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"blocks/text_display.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Registered event with ID [34m"base:text_display_puzzle_default_events"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_text_display_wall.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_text_display_wall.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_text_display_wall.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_text_display_wall.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"blocks/tree_log.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Registered event with ID [34m"base:tree_log_puzzle_default_events"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_tree_log.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:tree_log[default]"[0m with generator [34m"base:slabs_all"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_tree_log.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_tree_log.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_tree_log.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_tree_log_bark.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:tree_log[type=bark]"[0m with generator [34m"base:slabs_all"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_tree_log_bark.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_tree_log_bark.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_tree_log_bark.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:tree_log[type=bark]"[0m with generator [34m"base:stairs_seamless_all"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"blocks/water.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Registered event with ID [34m"base:water_puzzle_default_events"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_water.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"blocks/wood_planks.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Registered event with ID [34m"base:wood_planks_puzzle_default_events"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_wood_planks.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:wood_planks[default]"[0m with generator [34m"base:slabs_all"
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_wood_planks.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_wood_planks.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (Puzzle | AssetLoader) Loading [33m"models/blocks/model_wood_planks.json"[37m from Cosmic Reach
+[22:35:41] [GameLoader/INFO] (BlockLoader) Transforming block state [34m"base:wood_planks[default]"[0m with generator [34m"base:stairs_seamless_all"
+[22:35:41] [GameLoader/INFO] (BlockLoader) Registering Block Model finalizers
+[22:35:41] [GameLoader/INFO] (BlockLoader) Registering Block finalizers
+[22:35:41] [main/INFO] (Puzzle | AssetLoader) Loading [33m"items/shovel_iron.json"[37m from Cosmic Reach
+[22:35:41] [main/INFO] (Puzzle | AssetLoader) Loading [33m"items/ingot_iron.json"[37m from Cosmic Reach
+[22:35:41] [main/INFO] (Puzzle | AssetLoader) Loading [33m"items/fluid_vacuum.json"[37m from Cosmic Reach
+[22:35:41] [main/INFO] (Puzzle | AssetLoader) Loading [33m"items/pickaxe_aluminium.json"[37m from Cosmic Reach
+[22:35:41] [main/INFO] (Puzzle | AssetLoader) Loading [33m"items/axe_aluminium.json"[37m from Cosmic Reach
+[22:35:41] [main/INFO] (Puzzle | AssetLoader) Loading [33m"items/medkit_gold.json"[37m from Cosmic Reach
+[22:35:41] [main/INFO] (Puzzle | AssetLoader) Loading [33m"items/shovel_aluminium.json"[37m from Cosmic Reach
+[22:35:41] [main/INFO] (Puzzle | AssetLoader) Loading [33m"items/ingot_gold.json"[37m from Cosmic Reach
+[22:35:41] [main/INFO] (Puzzle | AssetLoader) Loading [33m"items/stick.json"[37m from Cosmic Reach
+[22:35:41] [main/INFO] (Puzzle | AssetLoader) Loading [33m"items/pickaxe_stone.json"[37m from Cosmic Reach
+[22:35:41] [main/INFO] (Puzzle | AssetLoader) Loading [33m"items/shovel_stone.json"[37m from Cosmic Reach
+[22:35:41] [main/INFO] (Puzzle | AssetLoader) Loading [33m"items/ingot_aluminium.json"[37m from Cosmic Reach
+[22:35:41] [main/INFO] (Puzzle | AssetLoader) Loading [33m"items/medkit.json"[37m from Cosmic Reach
+[22:35:41] [main/INFO] (Puzzle | AssetLoader) Loading [33m"items/axe_iron.json"[37m from Cosmic Reach
+[22:35:41] [main/INFO] (Puzzle | AssetLoader) Loading [33m"items/pickaxe_iron.json"[37m from Cosmic Reach
+[22:35:41] [main/INFO] (Puzzle | AssetLoader) Loading [33m"items/axe_stone.json"[37m from Cosmic Reach
+[22:35:41] [main/INFO] (Puzzle | AssetLoader) Loading [33m"loot/leaves_poplar.json"[37m from Cosmic Reach
+[22:35:41] [main/INFO] (Puzzle | AssetLoader) Loading [33m"loot/interceptor_trap.json"[37m from Cosmic Reach
+[22:35:41] [main/INFO] (Puzzle | AssetLoader) Loading [33m"loot/interceptor.json"[37m from Cosmic Reach
+[22:35:41] [main/INFO] (Puzzle | AssetLoader) Loading [33m"recipes/crafting/crate.json"[37m from Cosmic Reach
+[22:35:41] [main/INFO] (Puzzle | AssetLoader) Loading [33m"recipes/crafting/shovel_aluminium.json"[37m from Cosmic Reach
+[22:35:41] [main/INFO] (Puzzle | AssetLoader) Loading [33m"recipes/crafting/text_display.json"[37m from Cosmic Reach
+[22:35:41] [main/INFO] (Puzzle | AssetLoader) Loading [33m"recipes/crafting/axe_stone.json"[37m from Cosmic Reach
+[22:35:41] [main/INFO] (Puzzle | AssetLoader) Loading [33m"recipes/crafting/stick.json"[37m from Cosmic Reach
+[22:35:41] [main/INFO] (Puzzle | AssetLoader) Loading [33m"recipes/crafting/medkit_gold.json"[37m from Cosmic Reach
+[22:35:41] [main/INFO] (Puzzle | AssetLoader) Loading [33m"recipes/crafting/axe_aluminium.json"[37m from Cosmic Reach
+[22:35:41] [main/INFO] (Puzzle | AssetLoader) Loading [33m"recipes/crafting/pickaxe_aluminium.json"[37m from Cosmic Reach
+[22:35:41] [main/INFO] (Puzzle | AssetLoader) Loading [33m"recipes/crafting/axe_iron.json"[37m from Cosmic Reach
+[22:35:41] [main/INFO] (Puzzle | AssetLoader) Loading [33m"recipes/crafting/fluid_vacuum.json"[37m from Cosmic Reach
+[22:35:41] [main/INFO] (Puzzle | AssetLoader) Loading [33m"recipes/crafting/metal_panel.json"[37m from Cosmic Reach
+[22:35:41] [main/INFO] (Puzzle | AssetLoader) Loading [33m"recipes/crafting/shovel_iron.json"[37m from Cosmic Reach
+[22:35:41] [main/INFO] (Puzzle | AssetLoader) Loading [33m"recipes/crafting/boombox.json"[37m from Cosmic Reach
+[22:35:41] [main/INFO] (Puzzle | AssetLoader) Loading [33m"recipes/crafting/pickaxe_stone.json"[37m from Cosmic Reach
+[22:35:41] [main/INFO] (Puzzle | AssetLoader) Loading [33m"recipes/crafting/lunar_soil_packed.json"[37m from Cosmic Reach
+[22:35:41] [main/INFO] (Puzzle | AssetLoader) Loading [33m"recipes/crafting/aluminium_panel.json"[37m from Cosmic Reach
+[22:35:41] [main/INFO] (Puzzle | AssetLoader) Loading [33m"recipes/crafting/wood_planks.json"[37m from Cosmic Reach
+[22:35:41] [main/INFO] (Puzzle | AssetLoader) Loading [33m"recipes/crafting/pickaxe_iron.json"[37m from Cosmic Reach
+[22:35:41] [main/INFO] (Puzzle | AssetLoader) Loading [33m"recipes/crafting/furnace.json"[37m from Cosmic Reach
+[22:35:41] [main/INFO] (Puzzle | AssetLoader) Loading [33m"recipes/crafting/shovel_stone.json"[37m from Cosmic Reach
+[22:35:41] [main/INFO] (saturn_cart) adding track: test
+[22:35:41] [main/INFO] (CosmicReach | Zone) Added zone loader "ServerZoneLoader" for zone "base:flat"
+[22:35:41] [WorldLoaderThread/INFO] (CosmicReach | ChunkSaver) Started saving world
+[22:35:41] [WorldLoaderThread/INFO] (CosmicReach | Zone) Saved Zone with ID "base:flat"
+[22:35:41] [WorldLoaderThread/INFO] (CosmicReach | ChunkSaver) Finished saving
+[22:35:41] [WorldLoaderThread/INFO] (CosmicReach | ChunkSaver) Started saving world
+[22:35:41] [WorldLoaderThread/INFO] (CosmicReach | Zone) Saved Zone with ID "base:flat"
+[22:35:41] [WorldLoaderThread/INFO] (CosmicReach | ChunkSaver) Finished saving
+[22:35:51] [nioEventLoopGroup-3-1/INFO] (PacketInterceptor) Registered [92mLazy[0m Packet [34m"finalforeach.cosmicreach.networking.packets.meta.ProtocolSyncPacket"[0m with numeral ID [35m#1
+[22:35:51] [nioEventLoopGroup-3-1/INFO] (PacketInterceptor) Registered [92mLazy[0m Packet [34m"finalforeach.cosmicreach.networking.packets.meta.TransactionPacket"[0m with numeral ID [35m#2
+[22:35:51] [nioEventLoopGroup-3-1/INFO] (PacketInterceptor) Registered [92mLazy[0m Packet [34m"finalforeach.cosmicreach.networking.packets.meta.LoginPacket"[0m with numeral ID [35m#3
+[22:35:51] [nioEventLoopGroup-3-1/INFO] (PacketInterceptor) Registered [92mLazy[0m Packet [34m"finalforeach.cosmicreach.networking.packets.meta.RemovedPlayerPacket"[0m with numeral ID [35m#4
+[22:35:51] [nioEventLoopGroup-3-1/INFO] (PacketInterceptor) Registered [92mLazy[0m Packet [34m"finalforeach.cosmicreach.networking.packets.EndTickPacket"[0m with numeral ID [35m#5
+[22:35:51] [nioEventLoopGroup-3-1/INFO] (PacketInterceptor) Registered [92mLazy[0m Packet [34m"finalforeach.cosmicreach.networking.packets.meta.WorldRecievedGamePacket"[0m with numeral ID [35m#6
+[22:35:51] [nioEventLoopGroup-3-1/INFO] (PacketInterceptor) Registered [92mLazy[0m Packet [34m"finalforeach.cosmicreach.networking.packets.meta.SetNetworkSetting"[0m with numeral ID [35m#7
+[22:35:51] [nioEventLoopGroup-3-1/INFO] (PacketInterceptor) Registered [92mLazy[0m Packet [34m"finalforeach.cosmicreach.networking.packets.meta.ChallengeLoginPacket"[0m with numeral ID [35m#8
+[22:35:51] [nioEventLoopGroup-3-1/INFO] (PacketInterceptor) Registered [92mLazy[0m Packet [34m"finalforeach.cosmicreach.networking.packets.meta.ItchSessionTokenPacket"[0m with numeral ID [35m#9
+[22:35:51] [nioEventLoopGroup-3-1/INFO] (PacketInterceptor) Registered [92mLazy[0m Packet [34m"finalforeach.cosmicreach.networking.packets.entities.PlayerPacket"[0m with numeral ID [35m#10
+[22:35:51] [nioEventLoopGroup-3-1/INFO] (PacketInterceptor) Registered [92mLazy[0m Packet [34m"finalforeach.cosmicreach.networking.packets.MessagePacket"[0m with numeral ID [35m#11
+[22:35:51] [nioEventLoopGroup-3-1/INFO] (PacketInterceptor) Registered [92mLazy[0m Packet [34m"finalforeach.cosmicreach.networking.packets.entities.PlayerPositionPacket"[0m with numeral ID [35m#12
+[22:35:51] [nioEventLoopGroup-3-1/INFO] (PacketInterceptor) Registered [92mLazy[0m Packet [34m"finalforeach.cosmicreach.networking.packets.entities.EntityPositionPacket"[0m with numeral ID [35m#13
+[22:35:51] [nioEventLoopGroup-3-1/INFO] (PacketInterceptor) Registered [92mLazy[0m Packet [34m"finalforeach.cosmicreach.networking.packets.ZonePacket"[0m with numeral ID [35m#14
+[22:35:51] [nioEventLoopGroup-3-1/INFO] (PacketInterceptor) Registered [92mLazy[0m Packet [34m"finalforeach.cosmicreach.networking.packets.ChunkColumnPacket"[0m with numeral ID [35m#15
+[22:35:51] [nioEventLoopGroup-3-1/INFO] (PacketInterceptor) Registered [92mLazy[0m Packet [34m"finalforeach.cosmicreach.networking.packets.CommandPacket"[0m with numeral ID [35m#16
+[22:35:51] [nioEventLoopGroup-3-1/INFO] (PacketInterceptor) Registered [92mLazy[0m Packet [34m"finalforeach.cosmicreach.networking.packets.meta.DisconnectPacket"[0m with numeral ID [35m#17
+[22:35:51] [nioEventLoopGroup-3-1/INFO] (PacketInterceptor) Registered [92mLazy[0m Packet [34m"finalforeach.cosmicreach.networking.packets.blocks.PlaceBlockPacket"[0m with numeral ID [35m#18
+[22:35:51] [nioEventLoopGroup-3-1/INFO] (PacketInterceptor) Registered [92mLazy[0m Packet [34m"finalforeach.cosmicreach.networking.packets.blocks.BreakBlockPacket"[0m with numeral ID [35m#19
+[22:35:51] [nioEventLoopGroup-3-1/INFO] (PacketInterceptor) Registered [92mLazy[0m Packet [34m"finalforeach.cosmicreach.networking.packets.blocks.InteractBlockPacket"[0m with numeral ID [35m#20
+[22:35:51] [nioEventLoopGroup-3-1/INFO] (PacketInterceptor) Registered [92mLazy[0m Packet [34m"finalforeach.cosmicreach.networking.packets.blocks.BlockReplacePacket"[0m with numeral ID [35m#21
+[22:35:51] [nioEventLoopGroup-3-1/INFO] (PacketInterceptor) Registered [92mLazy[0m Packet [34m"finalforeach.cosmicreach.networking.packets.sounds.PlaySound2DPacket"[0m with numeral ID [35m#22
+[22:35:51] [nioEventLoopGroup-3-1/INFO] (PacketInterceptor) Registered [92mLazy[0m Packet [34m"finalforeach.cosmicreach.networking.packets.sounds.PlaySound3DPacket"[0m with numeral ID [35m#23
+[22:35:51] [nioEventLoopGroup-3-1/INFO] (PacketInterceptor) Registered [92mLazy[0m Packet [34m"finalforeach.cosmicreach.networking.packets.entities.DropItemPacket"[0m with numeral ID [35m#24
+[22:35:51] [nioEventLoopGroup-3-1/INFO] (PacketInterceptor) Registered [92mLazy[0m Packet [34m"finalforeach.cosmicreach.networking.packets.SlotInteractPacket"[0m with numeral ID [35m#25
+[22:35:51] [nioEventLoopGroup-3-1/INFO] (PacketInterceptor) Registered [92mLazy[0m Packet [34m"finalforeach.cosmicreach.networking.packets.ContainerSyncPacket"[0m with numeral ID [35m#26
+[22:35:51] [nioEventLoopGroup-3-1/INFO] (PacketInterceptor) Registered [92mLazy[0m Packet [34m"finalforeach.cosmicreach.networking.packets.blocks.BlockEntityContainerSyncPacket"[0m with numeral ID [35m#27
+[22:35:51] [nioEventLoopGroup-3-1/INFO] (PacketInterceptor) Registered [92mLazy[0m Packet [34m"finalforeach.cosmicreach.networking.packets.blocks.BlockEntityScreenPacket"[0m with numeral ID [35m#28
+[22:35:51] [nioEventLoopGroup-3-1/INFO] (PacketInterceptor) Registered [92mLazy[0m Packet [34m"finalforeach.cosmicreach.networking.packets.blocks.BlockEntityDataPacket"[0m with numeral ID [35m#29
+[22:35:51] [nioEventLoopGroup-3-1/INFO] (PacketInterceptor) Registered [92mLazy[0m Packet [34m"finalforeach.cosmicreach.networking.packets.blocks.DropItemFromBlockEntityContainerPacket"[0m with numeral ID [35m#30
+[22:35:51] [nioEventLoopGroup-3-1/INFO] (PacketInterceptor) Registered [92mLazy[0m Packet [34m"finalforeach.cosmicreach.networking.packets.blocks.SignsEntityPacket"[0m with numeral ID [35m#31
+[22:35:51] [nioEventLoopGroup-3-1/INFO] (PacketInterceptor) Registered [92mLazy[0m Packet [34m"finalforeach.cosmicreach.networking.packets.entities.SpawnEntityPacket"[0m with numeral ID [35m#32
+[22:35:51] [nioEventLoopGroup-3-1/INFO] (PacketInterceptor) Registered [92mLazy[0m Packet [34m"finalforeach.cosmicreach.networking.packets.entities.DespawnEntityPacket"[0m with numeral ID [35m#33
+[22:35:51] [nioEventLoopGroup-3-1/INFO] (PacketInterceptor) Registered [92mLazy[0m Packet [34m"finalforeach.cosmicreach.networking.packets.entities.AttackEntityPacket"[0m with numeral ID [35m#34
+[22:35:51] [nioEventLoopGroup-3-1/INFO] (PacketInterceptor) Registered [92mLazy[0m Packet [34m"finalforeach.cosmicreach.networking.packets.entities.InteractEntityPacket"[0m with numeral ID [35m#35
+[22:35:51] [nioEventLoopGroup-3-1/INFO] (PacketInterceptor) Registered [92mLazy[0m Packet [34m"finalforeach.cosmicreach.networking.packets.entities.HitEntityPacket"[0m with numeral ID [35m#36
+[22:35:51] [nioEventLoopGroup-3-1/INFO] (PacketInterceptor) Registered [92mLazy[0m Packet [34m"finalforeach.cosmicreach.networking.packets.entities.RespawnPacket"[0m with numeral ID [35m#37
+[22:35:51] [nioEventLoopGroup-3-1/INFO] (PacketInterceptor) Registered [95mReserved[0m Packet [34m"identification-packet"[0m with numeral ID [35m#9000
+[22:35:51] [nioEventLoopGroup-3-1/INFO] (PacketInterceptor) Registered [95mReserved[0m Packet [34m"modlist-request-packet"[0m with numeral ID [35m#9001
+[22:35:51] [nioEventLoopGroup-3-1/INFO] (PacketInterceptor) Registered [95mReserved[0m Packet [34m"modlist-send-packet"[0m with numeral ID [35m#9002
+[22:35:51] [nioEventLoopGroup-3-1/INFO] (CosmicReach | PlayerSaver) Loading player for account: CrabKing(itch_id:10175723)
+[22:35:52] [WorldLoaderThread/INFO] (Puzzle | AssetLoader) Loading [33m"recipes/furnace/defaults.json"[37m from Cosmic Reach
+[22:36:21] [nioEventLoopGroup-3-2/INFO] (CosmicReach | PlayerSaver) Loading player for account: Spicylemon2623(itch_id:9575494)
+[22:38:41] [WorldLoaderThread/INFO] (CosmicReach | ChunkSaver) Started saving world
+[22:38:41] [WorldLoaderThread/INFO] (CosmicReach | Zone) Saved Zone with ID "base:flat"
+[22:38:41] [WorldLoaderThread/INFO] (CosmicReach | PlayerSaver) Saved player: itch:crabk1ng
+[22:38:41] [WorldLoaderThread/INFO] (CosmicReach | PlayerSaver) Saved player: itch:spicylemon2623
+[22:38:41] [WorldLoaderThread/INFO] (CosmicReach | ChunkSaver) Finished saving
+[22:41:41] [WorldLoaderThread/INFO] (CosmicReach | ChunkSaver) Started saving world
+[22:41:41] [WorldLoaderThread/INFO] (CosmicReach | Zone) Saved Zone with ID "base:flat"
+[22:41:41] [WorldLoaderThread/INFO] (CosmicReach | PlayerSaver) Saved player: itch:crabk1ng
+[22:41:41] [WorldLoaderThread/INFO] (CosmicReach | PlayerSaver) Saved player: itch:spicylemon2623
+[22:41:41] [WorldLoaderThread/INFO] (CosmicReach | ChunkSaver) Finished saving
+[22:44:41] [WorldLoaderThread/INFO] (CosmicReach | ChunkSaver) Started saving world
+[22:44:41] [WorldLoaderThread/INFO] (CosmicReach | Zone) Saved Zone with ID "base:flat"
+[22:44:41] [WorldLoaderThread/INFO] (CosmicReach | PlayerSaver) Saved player: itch:crabk1ng
+[22:44:41] [WorldLoaderThread/INFO] (CosmicReach | PlayerSaver) Saved player: itch:spicylemon2623
+[22:44:41] [WorldLoaderThread/INFO] (CosmicReach | ChunkSaver) Finished saving
+[22:47:32] [nioEventLoopGroup-3-1/INFO] (CosmicReach | PlayerSaver) Saved player: itch:crabk1ng
+[22:47:41] [WorldLoaderThread/INFO] (CosmicReach | ChunkSaver) Started saving world
+[22:47:41] [WorldLoaderThread/INFO] (CosmicReach | Zone) Saved Zone with ID "base:flat"
+[22:47:41] [WorldLoaderThread/INFO] (CosmicReach | PlayerSaver) Saved player: itch:spicylemon2623
+[22:47:41] [WorldLoaderThread/INFO] (CosmicReach | ChunkSaver) Finished saving
+[22:49:27] [nioEventLoopGroup-3-2/INFO] (CosmicReach | PlayerSaver) Saved player: itch:spicylemon2623
+[22:49:27] [WorldLoaderThread/INFO] (CosmicReach | ChunkSaver) Started saving world
+[22:49:27] [WorldLoaderThread/INFO] (CosmicReach | Zone) Saved Zone with ID "base:flat"
+[22:49:27] [WorldLoaderThread/INFO] (CosmicReach | ChunkSaver) Finished saving
+[22:51:45] [nioEventLoopGroup-3-3/INFO] (CosmicReach | PlayerSaver) Loading player for account: Spicylemon2623(itch_id:9575494)
+[22:51:45] [nioEventLoopGroup-3-3/INFO] (Puzzle | Server) Account "Spicylemon2623" has joined as a modded client, the client being used is identified as "puzzle-loader"
+[22:51:45] [nioEventLoopGroup-3-3/INFO] (Puzzle | Server) Getting modlist from player ID: "itch_id:9575494", Name: "Spicylemon2623"
+[22:51:45] [nioEventLoopGroup-3-3/INFO] (Puzzle | Server) Disconnecting player ID: "itch_id:9575494", Name: "Spicylemon2623" due to modlist not being the same.
+[22:51:45] [nioEventLoopGroup-3-3/INFO] (CosmicReach | PlayerSaver) Saved player: itch:spicylemon2623
+[22:51:45] [WorldLoaderThread/INFO] (CosmicReach | ChunkSaver) Started saving world
+[22:51:45] [WorldLoaderThread/INFO] (CosmicReach | Zone) Saved Zone with ID "base:flat"
+[22:51:45] [WorldLoaderThread/INFO] (CosmicReach | ChunkSaver) Finished saving

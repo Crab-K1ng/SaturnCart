@@ -36,3 +36,5 @@ public field finalforeach/cosmicreach/blockentities/BlockEntity x
 public field finalforeach/cosmicreach/blockentities/BlockEntity y
 public field finalforeach/cosmicreach/blockentities/BlockEntity z
 
+public field finalforeach/cosmicreach/networking/netty/NettyServer authenticatedConnections
+

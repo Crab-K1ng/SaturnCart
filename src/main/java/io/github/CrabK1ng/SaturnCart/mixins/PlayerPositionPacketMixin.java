@@ -4,15 +4,14 @@ import com.badlogic.gdx.math.Vector3;
 import finalforeach.cosmicreach.entities.Entity;
 import finalforeach.cosmicreach.entities.player.Player;
 import finalforeach.cosmicreach.networking.NetworkIdentity;
-import finalforeach.cosmicreach.networking.packets.MessagePacket;
 import finalforeach.cosmicreach.networking.packets.entities.PlayerPositionPacket;
-import finalforeach.cosmicreach.networking.server.ServerIdentity;
-import finalforeach.cosmicreach.networking.server.ServerSingletons;
 import io.github.CrabK1ng.SaturnCart.Constants;
 import io.github.CrabK1ng.SaturnCart.GameManager;
 import io.github.CrabK1ng.SaturnCart.RaceTrack;
-import io.github.CrabK1ng.SaturnCart.networking.IPlayer;
+import io.github.CrabK1ng.SaturnCart.api.IPlayer;
 import io.github.CrabK1ng.SaturnCart.util.EntityUtils;
+import io.github.CrabK1ng.SaturnCart.util.MessageSend;
+import io.github.CrabK1ng.SaturnCart.util.SoundManager;
 import io.netty.channel.ChannelHandlerContext;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
@@ -34,7 +33,7 @@ public class PlayerPositionPacketMixin {
         Entity playerEntity = p.getEntity();
 
         if (player.isRacing()) {
-            RaceTrack track = GameManager.getPlayerSelectedTrack(p.getAccount().getUniqueId());
+            RaceTrack track = GameManager.getCurrentTrack(); //"no more jaffas for you", "too late it's in my mouth"
             // Checkpoint 1
             if (EntityUtils.isPlayerInArea(playerEntity, track.getCheckpoinOnePositions())
                     && !player.getcheckpoint1()) {
@@ -53,11 +52,7 @@ public class PlayerPositionPacketMixin {
 
                 // If player went the wrong way
                 if (player.getcheckpoint1() && !player.getcheckpoint2()) {
-
-                    // TODO send to player only
-                    MessagePacket messagepacket = new MessagePacket("You're going the wrong way!");
-                    ServerIdentity serveridentity = ServerSingletons.getConnection(p);
-                    messagepacket.setupAndSend(serveridentity);
+                    MessageSend.sendMessage("You're going the wrong way!", p);
 
                     player.setcheckpoint1(false);
 
@@ -72,16 +67,21 @@ public class PlayerPositionPacketMixin {
 //                        gm.createScoreboard(Bukkit.getPlayer(uuid));
 
                     if (player.getLap() == track.getLaps()) {
-                        MessagePacket messagepacket = new MessagePacket("Final Lap!");
-                        ServerIdentity serveridentity = ServerSingletons.getConnection(p);
-                        messagepacket.setupAndSend(serveridentity);
+                        MessageSend.sendMessage("Final Lap!", p);
+                        SoundManager.playSound(SoundManager.finalLap, p, 0.1F);
+
                     } else if (player.getLap() < track.getLaps()){
-                        MessagePacket messagepacket = new MessagePacket("Lap " + player.getLap());
-                        ServerIdentity serveridentity = ServerSingletons.getConnection(p);
-                        messagepacket.setupAndSend(serveridentity);
+                        MessageSend.sendMessage("Lap " + player.getLap(), p);
                     }
 
                     if (player.getLap() > track.getLaps()) {
+
+                        MessageSend.sendMessage("Finished!", p);
+                        Constants.LOGGER.info("Finished!");
+
+                        if (!track.getFinished().contains(p)){
+                            track.addFinished(p);
+                        }
 
 //                        arena.addScore(p);
 //                        for (UUID uuid : arena.getPlayers()) {
@@ -93,18 +93,6 @@ public class PlayerPositionPacketMixin {
 //                        p.getVehicle().remove();
 //                        p.setGameMode(GameMode.SPECTATOR);
 
-                        MessagePacket messagepacket = new MessagePacket("Finished!");
-                        ServerIdentity serveridentity = ServerSingletons.getConnection(p);
-                        messagepacket.setupAndSend(serveridentity);
-                        Constants.LOGGER.info("Finished!");
-
-                        if (!track.getFinished().contains(p)){
-                            track.addFinished(p);
-                        }
-                        if (track.getplayers().size() == track.getFinished().size()){
-                            track.stop();
-                        }
-
 //                        p.playSound(p.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1, 1);
 
 
@@ -115,6 +103,9 @@ public class PlayerPositionPacketMixin {
 //                        }
                     }
                 }
+            }
+            if (track.getFinished().size() >= track.getplayers().size()){
+                track.stop();
             }
         }
 //        if (p.getGameMode() == GameMode.SPECTATOR) {

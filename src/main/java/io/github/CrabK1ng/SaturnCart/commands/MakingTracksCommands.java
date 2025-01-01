@@ -11,30 +11,36 @@ import finalforeach.cosmicreach.networking.server.ServerIdentity;
 import finalforeach.cosmicreach.networking.server.ServerSingletons;
 import io.github.CrabK1ng.SaturnCart.GameManager;
 import io.github.CrabK1ng.SaturnCart.RaceTrack;
+import io.github.CrabK1ng.SaturnCart.util.MessageSend;
 
 public class MakingTracksCommands {
+    private static final String notOpError = "need to be op to run this command";
+    private static final String trackIsNullError = "Track is null use /track to select a track";
+    private static final String use1or2Error = "use 1 or 2 for pos1 or pos2";
+
     public static void register() {
+        //TODO update this
         LiteralArgumentBuilder<ServerCommandSource> setFinishlLne = CommandManager.literal("setfinishline");
         setFinishlLne.then(CommandManager.argument(ServerCommandSource.class, "1or2Pos", IntegerArgumentType.integer())
                 .executes(context -> {
                     int oneOrTwo = IntegerArgumentType.getInteger(context, "1or2Pos");
                     Player player = context.getSource().getPlayer();
                     Vector3 playerPos = player.getEntity().getPosition();
-                    RaceTrack track = GameManager.getPlayerSelectedTrack(context.getSource().getAccount().getUniqueId());
-                    if (track != null){
-                        if (oneOrTwo == 1){
-                            track.setFinishLinePositionOne(playerPos);
-                        } else if (oneOrTwo == 2) {
-                            track.setFinishLinePositionTwo(playerPos);
-                        }else {
-                            MessagePacket messagepacket = new MessagePacket("use 1 or 2 for pos1 or pos2");
-                            ServerIdentity serveridentity = ServerSingletons.getConnection(context.getSource().getPlayer());
-                            messagepacket.setupAndSend(serveridentity);
+                    RaceTrack track = GameManager.getPlayerTrack(player);
+                    if (context.getSource().hasOperator()){
+                        if (track != null){
+                            if (oneOrTwo == 1){
+                                track.setFinishLinePositionOne(playerPos);
+                            } else if (oneOrTwo == 2) {
+                                track.setFinishLinePositionTwo(playerPos);
+                            }else {
+                                MessageSend.sendMessage(use1or2Error, player);
+                            }
+                        }else{
+                            MessageSend.sendMessage(trackIsNullError, player);
                         }
-                    }else{
-                        MessagePacket messagepacket = new MessagePacket("Track is null use /selecttrack to select a track");
-                        ServerIdentity serveridentity = ServerSingletons.getConnection(context.getSource().getPlayer());
-                        messagepacket.setupAndSend(serveridentity);
+                    } else {
+                        MessageSend.sendMessage(notOpError, player);
                     }
                     return 0;
                 }));
@@ -46,21 +52,21 @@ public class MakingTracksCommands {
                     int oneOrTwo = IntegerArgumentType.getInteger(context, "1or2Pos");
                     Player player = context.getSource().getPlayer();
                     Vector3 playerPos = player.getEntity().getPosition();
-                    RaceTrack track = GameManager.getPlayerSelectedTrack(context.getSource().getAccount().getUniqueId());
-                    if (track != null){
-                        if (oneOrTwo == 1){
-                            track.setCheckpoinOnePositionOne(playerPos);
-                        } else if (oneOrTwo == 2) {
-                            track.setCheckpoinOnePositionTwo(playerPos);
-                        }else {
-                            MessagePacket messagepacket = new MessagePacket("use 1 or 2 for pos1 or pos2");
-                            ServerIdentity serveridentity = ServerSingletons.getConnection(context.getSource().getPlayer());
-                            messagepacket.setupAndSend(serveridentity);
+                    RaceTrack track = GameManager.getPlayerTrack(player);
+                    if (context.getSource().hasOperator()){
+                        if (track != null){
+                            if (oneOrTwo == 1){
+                                track.setCheckpoinOnePositionOne(playerPos);
+                            } else if (oneOrTwo == 2) {
+                                track.setCheckpoinOnePositionTwo(playerPos);
+                            }else {
+                                MessageSend.sendMessage(use1or2Error, player);
+                            }
+                        }else{
+                            MessageSend.sendMessage(trackIsNullError, player);
                         }
-                    }else{
-                        MessagePacket messagepacket = new MessagePacket("Track is null use /selecttrack to select a track");
-                        ServerIdentity serveridentity = ServerSingletons.getConnection(context.getSource().getPlayer());
-                        messagepacket.setupAndSend(serveridentity);
+                    } else {
+                        MessageSend.sendMessage(notOpError, player);
                     }
                     return 0;
                 }));
@@ -72,73 +78,61 @@ public class MakingTracksCommands {
                     int oneOrTwo = IntegerArgumentType.getInteger(context, "1or2Pos");
                     Player player = context.getSource().getPlayer();
                     Vector3 playerPos = player.getEntity().getPosition();
-                    RaceTrack track = GameManager.getPlayerSelectedTrack(context.getSource().getAccount().getUniqueId());
-                    if (track != null){
-                        if (oneOrTwo == 1){
-                            track.setCheckpoinTwoPositionOne(playerPos);
-                        } else if (oneOrTwo == 2) {
-                            track.setCheckpoinTwoPositionTwo(playerPos);
-                        }else {
-                            MessagePacket messagepacket = new MessagePacket("use 1 or 2 for pos1 or pos2");
-                            ServerIdentity serveridentity = ServerSingletons.getConnection(context.getSource().getPlayer());
-                            messagepacket.setupAndSend(serveridentity);
+                    RaceTrack track = GameManager.getPlayerTrack(player);
+                    if (context.getSource().hasOperator()){
+                        if (track != null){
+                            if (oneOrTwo == 1){
+                                track.setCheckpoinTwoPositionOne(playerPos);
+                            } else if (oneOrTwo == 2) {
+                                track.setCheckpoinTwoPositionTwo(playerPos);
+                            }else {
+                                MessageSend.sendMessage(use1or2Error, player);
+                            }
+                        }else{
+                            MessageSend.sendMessage(trackIsNullError, player);
                         }
-                    }else{
-                        MessagePacket messagepacket = new MessagePacket("Track is null use /selecttrack to select a track");
-                        ServerIdentity serveridentity = ServerSingletons.getConnection(context.getSource().getPlayer());
-                        messagepacket.setupAndSend(serveridentity);
+                    } else {
+                        MessageSend.sendMessage(notOpError, player);
                     }
                     return 0;
                 }));
         CommandManager.DISPATCHER.register(setCheckpoinTwo);
 
-        LiteralArgumentBuilder<ServerCommandSource> setAll = CommandManager.literal("setall");
-        setAll.then(CommandManager.argument(ServerCommandSource.class, "1or2Pos", IntegerArgumentType.integer())
-                .executes(context -> {
-                    int oneOrTwo = IntegerArgumentType.getInteger(context, "1or2Pos");
-                    Player player = context.getSource().getPlayer();
-                    Vector3 playerPos = player.getEntity().getPosition();
-                    RaceTrack track = GameManager.getPlayerSelectedTrack(context.getSource().getAccount().getUniqueId());
-                    MessagePacket messagepacket = new MessagePacket("DO NOT USE THIS!!!!!!");
-                    ServerIdentity serveridentity = ServerSingletons.getConnection(context.getSource().getPlayer());
-                    messagepacket.setupAndSend(serveridentity);
-                    if (track != null){
-                        if (oneOrTwo == 1){
-                            track.setFinishLinePositionOne(playerPos);
-                            track.setCheckpoinOnePositionOne(playerPos);
-                            track.setCheckpoinTwoPositionOne(playerPos);
-                        } else if (oneOrTwo == 2) {
-                            track.setFinishLinePositionTwo(playerPos);
-                            track.setCheckpoinOnePositionTwo(playerPos);
-                            track.setCheckpoinTwoPositionTwo(playerPos);
-                        }else {
-                            messagepacket = new MessagePacket("use 1 or 2 for pos1 or pos2");
-                            serveridentity = ServerSingletons.getConnection(context.getSource().getPlayer());
-                            messagepacket.setupAndSend(serveridentity);
-                        }
-                    }else{
-                        messagepacket = new MessagePacket("Track is null use /selecttrack to select a track");
-                        serveridentity = ServerSingletons.getConnection(context.getSource().getPlayer());
-                        messagepacket.setupAndSend(serveridentity);
-                    }
-                    return 0;
-                }));
-        CommandManager.DISPATCHER.register(setAll);
-
         LiteralArgumentBuilder<ServerCommandSource> setlaps = CommandManager.literal("setlaps");
         setlaps.then(CommandManager.argument(ServerCommandSource.class, "Laps", IntegerArgumentType.integer())
                 .executes(context -> {
                     int laps = IntegerArgumentType.getInteger(context, "Laps");
-                    RaceTrack track = GameManager.getPlayerSelectedTrack(context.getSource().getAccount().getUniqueId());
-                    if (track != null){
-                        track.setLaps(laps);
-                    }else{
-                        MessagePacket messagepacket = new MessagePacket("Track is null use /selecttrack to select a track");
-                        ServerIdentity serveridentity = ServerSingletons.getConnection(context.getSource().getPlayer());
-                        messagepacket.setupAndSend(serveridentity);
+                    Player player = context.getSource().getPlayer();
+                    RaceTrack track = GameManager.getPlayerTrack(player);
+                    if (context.getSource().hasOperator()){
+                        if (track != null){
+                            track.setLaps(laps);
+                        }else{
+                            MessageSend.sendMessage(trackIsNullError, player);
+                        }
+                    } else {
+                        MessageSend.sendMessage(notOpError, player);
                     }
                     return 0;
                 }));
         CommandManager.DISPATCHER.register(setlaps);
+
+        LiteralArgumentBuilder<ServerCommandSource> setstart = CommandManager.literal("setstart");
+        setstart.executes(context -> {
+            Player player = context.getSource().getPlayer();
+            Vector3 playerPos = player.getEntity().getPosition();
+            RaceTrack track = GameManager.getPlayerTrack(player);
+            if (context.getSource().hasOperator()){
+                if (track != null){
+                    track.setStartPositions(playerPos);
+                }else{
+                    MessageSend.sendMessage(trackIsNullError, player);
+                }
+            } else {
+                MessageSend.sendMessage(notOpError, player);
+            }
+            return 0;
+        });
+        CommandManager.DISPATCHER.register(setstart);
     }
 }

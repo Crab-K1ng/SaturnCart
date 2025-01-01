@@ -8,13 +8,6 @@ import java.util.stream.StreamSupport;
 
 public class Vector3Utils {
 
-    /**
-     * Generates all Vector3 objects within a 3D box defined by two corners.
-     *
-     * @param corner1 One corner of the box.
-     * @param corner2 The opposite corner of the box.
-     * @return A Stream of all Vector3 objects in the box.
-     */
     public static Stream<Vector3> getAllInBox(Vector3 corner1, Vector3 corner2) {
         int x1 = (int) Math.min(corner1.x, corner2.x);
         int y1 = (int) Math.min(corner1.y, corner2.y);
@@ -26,9 +19,6 @@ public class Vector3Utils {
         return StreamSupport.stream(new Vector3Iterable(x1, y1, z1, x2, y2, z2).spliterator(), false);
     }
 
-    /**
-     * Iterable class for generating all Vector3 objects in a 3D box.
-     */
     private static class Vector3Iterable implements Iterable<Vector3> {
         private final int x1, y1, z1, x2, y2, z2;
 
@@ -70,14 +60,12 @@ public class Vector3Utils {
     }
 
     public static boolean isInsideBox(Vector3 point, Vector3 minCorner, Vector3 maxCorner) {
-        // Check if point's x, y, and z coordinates are within the bounds of the box.
         return point.x >= minCorner.x && point.x <= maxCorner.x &&
                 point.y >= minCorner.y && point.y <= maxCorner.y &&
                 point.z >= minCorner.z && point.z <= maxCorner.z;
     }
 
     public static Vector3[] getMinMaxCorners(Vector3 v1, Vector3 v2) {
-        // Initialize the minCorner and maxCorner based on comparisons
         Vector3 minCorner = new Vector3(
                 Math.min(v1.x, v2.x),
                 Math.min(v1.y, v2.y),
@@ -90,7 +78,6 @@ public class Vector3Utils {
                 Math.max(v1.z, v2.z)
         );
 
-        // Return an array where the first element is minCorner and the second is maxCorner
         return new Vector3[]{minCorner, maxCorner};
     }
 }

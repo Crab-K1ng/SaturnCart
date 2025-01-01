@@ -29,8 +29,8 @@
     }
   ],
   "depends": {
-    "cosmic-reach": ">=0.3.11",
-    "puzzle-loader": ">=2.0.13"
+    "cosmic-reach": ">=0.3.14",
+    "puzzle-loader": ">=2.2.2"
   },
   "accessManipulator": "saturn_cart.manipulator"
 }

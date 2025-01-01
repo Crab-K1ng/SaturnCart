@@ -1,4 +1,4 @@
-package io.github.CrabK1ng.SaturnCart.networking;
+package io.github.CrabK1ng.SaturnCart.api;
 
 import io.github.CrabK1ng.SaturnCart.RaceTrack;
 
@@ -16,6 +16,15 @@ public interface IPlayer {
 
     boolean getcheckpoint2();
     void setcheckpoint2(boolean checkpoint2);
+
+    RaceTrack getSelectedTrack();
+    void setSelectedTrack(RaceTrack track);
+
+    boolean canEditSigns();
+    void setCanEditSigns(boolean canEditSigns);
+
+    void setSound(boolean music);
+    boolean isSoundOn();
 
     void reset();
 }

@@ -10,10 +10,15 @@ import finalforeach.cosmicreach.blocks.BlockState;
 import finalforeach.cosmicreach.blocks.MissingBlockStateResult;
 import finalforeach.cosmicreach.entities.player.Player;
 import finalforeach.cosmicreach.io.SaveLocation;
-import finalforeach.cosmicreach.networking.packets.MessagePacket;
+import finalforeach.cosmicreach.networking.packets.entities.PlayerPositionPacket;
 import finalforeach.cosmicreach.networking.server.ServerSingletons;
-import io.github.CrabK1ng.SaturnCart.networking.IPlayer;
+import finalforeach.cosmicreach.savelib.crbin.CRBinDeserializer;
+import finalforeach.cosmicreach.savelib.crbin.CRBinSerializer;
+import finalforeach.cosmicreach.savelib.crbin.ICRBinSerializable;
+import io.github.CrabK1ng.SaturnCart.api.IPlayer;
 import io.github.CrabK1ng.SaturnCart.util.FileUtils;
+import io.github.CrabK1ng.SaturnCart.util.MessageSend;
+import io.github.CrabK1ng.SaturnCart.util.SoundManager;
 import io.github.CrabK1ng.SaturnCart.util.Vector3Utils;
 
 import java.io.File;
@@ -23,9 +28,10 @@ import java.nio.charset.StandardCharsets;
 import java.util.*;
 
 import static io.github.CrabK1ng.SaturnCart.GameManager.allTracks;
+import static io.github.CrabK1ng.SaturnCart.GameManager.raceTracks;
 import static io.github.CrabK1ng.SaturnCart.util.FileUtils.loadFile;
 
-public class RaceTrack implements Json.Serializable {
+public class RaceTrack implements Json.Serializable, ICRBinSerializable {
     private static final Json JSON = new Json();
     private String trackName;
     public  boolean start = false;
@@ -37,7 +43,9 @@ public class RaceTrack implements Json.Serializable {
     private List<Player> players = new ArrayList<>();
     private List<Player> finished = new ArrayList<>();
 
-    private RaceTrack(){
+    private Vector3 startPosition;
+
+    public RaceTrack(){
         this.finishLinePositions = new ArrayList<>(Collections.nCopies(2, null));
         this.checkpoinOnePositions = new ArrayList<>(Collections.nCopies(2, null));
         this.checkpoinTwoPositions = new ArrayList<>(Collections.nCopies(2, null));
@@ -50,24 +58,29 @@ public class RaceTrack implements Json.Serializable {
         this.checkpoinTwoPositions = new ArrayList<>(Collections.nCopies(2, null));
     }
 
+    public void reset(){
+        players.clear();
+        finished.clear();
+    }
+
     public void start(){
-
-        MessagePacket messagepacket = new MessagePacket("starting countdown");
-        ServerSingletons.SERVER.broadcastToAll(messagepacket);
-        int start = 10; // Start at 10 seconds
+        MessageSend.sendMessage("starting countdown");
+        finished.clear();
+        int start = 10;
         Timer timer = new Timer();
-
         TimerTask task = new TimerTask() {
             int timeLeft = start;
 
             @Override
             public void run() {
                 if (timeLeft >= 1) {
-                    MessagePacket messagepacket = new MessagePacket(timeLeft--+"");
-                    ServerSingletons.SERVER.broadcastToAll(messagepacket);
+                    MessageSend.sendMessage(timeLeft--+"");
                 } else {
                     wallDown();
-                    timer.cancel(); // Stop the timer
+                    timer.cancel();
+                }
+                if (timeLeft == 2F) {
+                    SoundManager.playSound(SoundManager.start, 0.1F);
                 }
             }
         };
@@ -84,11 +97,13 @@ public class RaceTrack implements Json.Serializable {
         for (int i = 0; i < finished.size(); i++) {
             Player player = finished.get(i);
             int l = i + 1;
-            MessagePacket messagepacket = new MessagePacket(l + ":" + player.getAccount().getDisplayName());
-            ServerSingletons.SERVER.broadcastToAll(messagepacket);
+            MessageSend.sendMessage(l + ":" + player.getAccount().getDisplayName());
         }
 
         this.wallUp();
+
+        reset();
+        GameManager.nextTrack();
     }
 
     public void wallUp(){
@@ -114,28 +129,32 @@ public class RaceTrack implements Json.Serializable {
         Vector3Utils.getAllInBox(pos1, pos2).forEach(pos ->
                 BlockUtil.setBlockAt(GameSingletons.world.getZoneCreateIfNull(GameSingletons.world.defaultZoneId), BlockState.getInstance("base:air[default]", MissingBlockStateResult.MISSING_OBJECT), (int) pos.x, (int) pos.y, (int) pos.z)
         );
-        MessagePacket messagepacket = new MessagePacket("GO!!");
-        ServerSingletons.SERVER.broadcastToAll(messagepacket);
+        MessageSend.sendMessage("GO!!");
     }
 
+    // FUCK YOU SPICY, yes crab );< i will (To anyone reading this, it is a joke, we are besties :) ahaha) no we are not >:[, wahhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh / what the fuck is this. im not really sure tbh. we did this at 6am!!! we have been awake all night!!!!
 
+    public void goTo(){
+        players.forEach(player -> {
+            player.getEntity().setPosition(startPosition);
+            PlayerPositionPacket playerPositionPacket = new PlayerPositionPacket(player);
+            ServerSingletons.SERVER.broadcastToAll(playerPositionPacket);
+        });
+    }
 
     public void addFinished(Player player){
-        IPlayer iPlayer = (IPlayer) player;
-        iPlayer.reset();
         this.finished.add(player);
     }
 
     public List<Player> getFinished(){
         return this.finished;
     }
-
-
-    public  void setName(String newName){
+    
+    public void setName(String newName){
         this.trackName = newName;
     }
 
-    public  String getName(){
+    public String getName(){
         return this.trackName;
     }
 
@@ -155,43 +174,47 @@ public class RaceTrack implements Json.Serializable {
         this.laps = laps;
     }
 
-    public  List<Vector3> getFinishLinePositions() {
+    public List<Vector3> getFinishLinePositions() {
         return this.finishLinePositions;
     }
 
-    public  List<Vector3> getCheckpoinOnePositions() {
+    public List<Vector3> getCheckpoinOnePositions() {
         return this.checkpoinOnePositions;
     }
 
-    public  List<Vector3> getCheckpoinTwoPositions() {
+    public List<Vector3> getCheckpoinTwoPositions() {
         return this.checkpoinTwoPositions;
     }
 
-    public  void setFinishLinePositionOne(Vector3 pos){
+    public void setFinishLinePositionOne(Vector3 pos){
         Vector3 vector3 = new Vector3((int) pos.x, (int) pos.y, (int) pos.z);
         this.finishLinePositions.set(0, vector3);
     }
-    public  void setFinishLinePositionTwo(Vector3 pos){
+    public void setFinishLinePositionTwo(Vector3 pos){
         Vector3 vector3 = new Vector3((int) pos.x, (int) pos.y, (int) pos.z);
         this.finishLinePositions.set(1, vector3);
     }
 
-    public  void setCheckpoinOnePositionOne(Vector3 pos){
+    public void setCheckpoinOnePositionOne(Vector3 pos){
         Vector3 vector3 = new Vector3((int) pos.x, (int) pos.y, (int) pos.z);
         this.checkpoinOnePositions.set(0, vector3);
     }
-    public  void setCheckpoinOnePositionTwo(Vector3 pos){
+    public void setCheckpoinOnePositionTwo(Vector3 pos){
         Vector3 vector3 = new Vector3((int) pos.x, (int) pos.y, (int) pos.z);
         this.checkpoinOnePositions.set(1, vector3);
     }
 
-    public  void setCheckpoinTwoPositionOne(Vector3 pos){
+    public void setCheckpoinTwoPositionOne(Vector3 pos){
         Vector3 vector3 = new Vector3((int) pos.x, (int) pos.y, (int) pos.z);
         this.checkpoinTwoPositions.set(0, vector3);
     }
-    public  void setCheckpoinTwoPositionTwo(Vector3 pos){
+    public void setCheckpoinTwoPositionTwo(Vector3 pos){
         Vector3 vector3 = new Vector3((int) pos.x, (int) pos.y, (int) pos.z);
         this.checkpoinTwoPositions.set(1, vector3);
+    }
+
+    public void setStartPositions(Vector3 pos){
+        this.startPosition = new Vector3((int) pos.x, (int) pos.y, (int) pos.z);
     }
 
     public static void loadAllTracks(String worldFolderName) {
@@ -208,6 +231,7 @@ public class RaceTrack implements Json.Serializable {
         RaceTrack track = JSON.fromJson(RaceTrack.class, loadFile(asset));
         Constants.LOGGER.info("adding track: "+ track.getName());
         allTracks.put(track.getName(), track);
+        raceTracks.add(track);
         return track;
     }
 
@@ -215,6 +239,10 @@ public class RaceTrack implements Json.Serializable {
         allTracks.forEach((name, track) -> {
             saveTrack(name, track);
         });
+    }
+    
+    public void saveTrack(){
+        saveTrack(this.trackName, this);
     }
 
     public static void saveTrack(String trackName, RaceTrack track) {
@@ -243,17 +271,39 @@ public class RaceTrack implements Json.Serializable {
     public void write(Json json) {
         json.writeValue("trackName", this.trackName);
         json.writeValue("laps", this.laps);
-        json.writeValue("finishLinePositions", finishLinePositions, List.class, Vector3.class);
-        json.writeValue("checkpoinOnePositions", checkpoinOnePositions, List.class, Vector3.class);
-        json.writeValue("checkpoinTwoPositions", checkpoinTwoPositions, List.class, Vector3.class);
+        json.writeValue("startPositions", this.startPosition, Vector3.class);
+        json.writeValue("finishLinePositions", this.finishLinePositions, List.class, Vector3.class);
+        json.writeValue("checkpoinOnePositions", this.checkpoinOnePositions, List.class, Vector3.class);
+        json.writeValue("checkpoinTwoPositions", this.checkpoinTwoPositions, List.class, Vector3.class);
     }
 
     @Override
     public void read(Json json, JsonValue jsonData) {
         this.trackName = json.readValue("trackName", String.class, jsonData);
         this.laps = json.readValue("laps", int.class, jsonData);
+        this.startPosition = json.readValue("startPositions", Vector3.class, jsonData);
         this.finishLinePositions = json.readValue("finishLinePositions", List.class, Vector3.class, jsonData);
         this.checkpoinOnePositions = json.readValue("checkpoinOnePositions", List.class, Vector3.class, jsonData);
         this.checkpoinTwoPositions = json.readValue("checkpoinTwoPositions", List.class, Vector3.class, jsonData);
+    }
+
+    @Override
+    public void read(CRBinDeserializer deserial) {
+        deserial.autoRead(this.trackName);
+        deserial.autoRead(this.laps);
+        deserial.autoRead(this.startPosition);
+        deserial.autoRead(this.finishLinePositions);
+        deserial.autoRead(this.checkpoinOnePositions);
+        deserial.autoRead(this.checkpoinTwoPositions);
+    }
+
+    @Override
+    public void write(CRBinSerializer serial) {
+        serial.autoWrite(this.trackName);
+        serial.autoWrite(this.laps);
+        serial.autoWrite(this.startPosition);
+        serial.autoWrite(this.finishLinePositions);
+        serial.autoWrite(this.checkpoinOnePositions);
+        serial.autoWrite(this.checkpoinTwoPositions);
     }
 }

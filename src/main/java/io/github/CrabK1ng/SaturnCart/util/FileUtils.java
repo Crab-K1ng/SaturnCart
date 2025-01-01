@@ -33,7 +33,6 @@ public class FileUtils {
             objectset.add(relativePath);
         });
 
-        // Process the found identifiers
         for (String file : objectset) {
             assetConsumer.accept(file.toString(), file);
         }
